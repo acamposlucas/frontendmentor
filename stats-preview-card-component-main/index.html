@@ -39,6 +39,7 @@
     class="bg-blue-900 flex flex-col xl:h-screen justify-center items-center py-4 px-6"
   >    
   </div>
+  <main role="main">
     <div class="bg-blue-800 rounded-lg flex sm:flex-col xl:flex-row">
       <div
         class="card__header w-full sm:h-[240px] xl:h-auto xl:right-0 sm:rounded-t-lg xl:rounded-l-none xl:rounded-r-lg xl:order-2"
@@ -49,11 +50,12 @@
       </div>
       <div
         class="flex flex-col sm:gap-4 xl:gap-6 xl:w-full py-6 px-4 sm:text-center xl:text-left text-white-900 xl:p-[70px]"
+        role="contentinfo"  
       >
-        <p class="font-bold sm:text-3xl xl:text-4xl">
+        <h1 class="font-bold sm:text-3xl xl:text-4xl">
           Get <span class="text-violet">insights</span> that help your business
           grow.
-        </p>
+        </h1>
         <p class="text-white-200 text-[15px]">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
@@ -84,6 +86,8 @@
         </ul>
       </div>
     </div>
+  </main>
+  <footer role="contentinfo">
     <div class="attribution text-white-900 text-sm text-center font-primary">
       Challenge by
       <a
@@ -92,7 +96,8 @@
         target="_blank"
         >Frontend Mentor</a
       >. Coded by
-      <a class="text-violet" href="https://github.com/acamposlucas>">Lucas</a>.
+      <a class="text-violet" href="https://github.com/acamposlucas">Lucas</a>.
     </div>
+  </footer>
   </body>
 </html>
