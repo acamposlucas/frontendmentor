@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+
+  <body class="bg-blue-300">
+    <main class="flex h-screen flex-col items-center justify-center gap-10 p-4">
+      <div
+        class="advice-box bg-violet relative h-[250px] w-full max-w-sm rounded-lg bg-blue-200 p-8 text-center"
+        role="main"
+      >
+        <p class="mb-4 font-sans text-sm uppercase tracking-widest text-green">
+          Advice #<span id="id"></span>
+        </p>
+        <h1 id="quote" class="text-cyan"></h1>
+        <div class="divider mt-4"></div>
+        <button
+          id="dice"
+          class="absolute top-full left-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-green p-[20px] active:shadow-3xl xl:hover:shadow-3xl"
+        >
+          <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+              fill="#202733"
+            />
+          </svg>
+        </button>
+      </div>
+      <footer class="attribution text-cyan" role="contentinfo">
+        Challenge by
+        <a
+          class="text-green"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="text-green" href="https://github.com/acamposlucas">Lucas</a>.
+      </footer>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

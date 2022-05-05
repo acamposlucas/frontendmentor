@@ -1,0 +1,19 @@
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+
+.divider {
+  background-image: url(../images/pattern-divider-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 16px;
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .divider {
+    background-image: url(../images/pattern-divider-desktop.svg);
+  }
+}
