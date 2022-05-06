@@ -6,6 +6,7 @@ Repository to all challenges from frontendmentor
 | Tags  | Challenge | Live|  Code|  Type| 
 | --- | -- |  -- | --  |  -- |
 | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)      |  Stats preview card component | [Live](https://melodious-faloodeh-419bd4.netlify.app/) | [Code](https://github.com/acamposlucas/frontendmentor/tree/main/stats-preview-card-component-main) |Free|
+| ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)  | Huddle landing page |  [Live](https://frontendmentor-silk.vercel.app/) | [Code](https://github.com/acamposlucas/frontendmentor/tree/main/huddle-landing-page-with-single-introductory-section-master)  |  Free |
 
 
 
