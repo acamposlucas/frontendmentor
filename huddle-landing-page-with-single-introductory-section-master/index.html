@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+  </head>
+  <body class="bg-violet h-screen">
+    <header class="p-6 xl:p-10">
+      <a href="#">
+        <img src="images/logo.svg" alt="" class="w-32 md:w-40 lg:w-48" />
+      </a>
+    </header>
+    <main>
+      <div
+        class="flex flex-col lg:flex-row lg:gap-6 xl:flex-wrap p-6 xl:p-10 xl:gap-10"
+      >
+        <div class="banner lg:w-[50%] xl:w-1/2 py-6" role="banner">
+          <img src="images/illustration-mockups.svg" alt="" />
+        </div>
+        <section
+          class="text-center lg:text-left py-6 flex flex-col gap-4 lg:w-[44%] xl:w-[47%] xl:justify-center xl:gap-8 lg:self-center lg:justify-self-center"
+        >
+          <h1
+            class="text-white text-2xl md:text-4xl lg:text-3xl xl:text-5xl xl:leading-tight xl:font-primary xl:w-[90%] font-semiBold"
+          >
+            Build The Community Your Fans Will Love
+          </h1>
+          <p
+            class="text-white font-secondary text-md md:text-lg opacity-80 xl:text-xl xl:w-[90%]"
+          >
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <a
+            href="#"
+            class="px-20 py-3 xl:px-14 bg-white rounded-[100px] sm:text-violet font-primary font-semiBold sm:text-sm md:text-base xl:text-base shadow-md shadow-black max-w-fit self-center lg:self-start xl:hover:text-white xl:hover:bg-magenta sm:active:bg-magenta sm:active:text-white transition-all"
+          >
+            Register
+          </a>
+        </section>
+      </div>
+    </main>
+    <footer
+      role="contentinfo"
+      class="xl:px-24 lg:absolute lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2"
+    >
+      <ul
+        class="flex gap-4 justify-center mt-6 xl:justify-end"
+        aria-label="List of social media links"
+      >
+        <li>
+          <a href="#">
+            <ion-icon
+              name="logo-facebook"
+              size="large"
+              class="text-white xl:hover:text-magenta active:text-magenta"
+            ></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon
+              name="logo-twitter"
+              size="large"
+              class="text-white xl:hover:text-magenta active:text-magenta"
+            ></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon
+              name="logo-instagram"
+              size="large"
+              class="text-white xl:hover:text-magenta active:text-magenta"
+            ></ion-icon>
+          </a>
+        </li>
+      </ul>
+
+      <p
+        class="font-primary p-2 text-sm md:text-base sm:text-center xl:text-right"
+      >
+        Challenge by
+        <a
+          class="text-magenta"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a class="text-magenta" href="https://github.com/acamposlucas">Lucas</a
+        >.
+      </p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
