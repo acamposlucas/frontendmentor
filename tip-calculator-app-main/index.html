@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+    </style>
+  </head>
+  <body>
+    <main class="bg-neutral-400">
+      <div class="py-10">
+        <img src="/images/logo.svg" alt="" class="my-0 mx-auto">
+      </div>
+
+      <div class="bg-neutral-500 rounded-t-3xl h-screen p-8 flex flex-col gap-6">
+        <div class="input-bill px-2">
+          <label for="bill" class="text-neutral-200 ">
+            Bill
+          </label>
+          <input type="text" id="bill" class="input">
+        </div>
+
+        <div class="tip px-2">
+          <p class="text-neutral-200 pb-4">Select Tip %</p>
+          <div class="grid grid-cols-2 gap-4">
+            <button class="btn-tip">5%</button>
+            <button class="btn-tip">10%</button>
+            <button class="btn-tip">15%</button>
+            <button class="btn-tip">25%</button>
+            <button class="btn-tip">50%</button>
+            <input type="text" class="btn-custom placeholder:text-neutral-100" placeholder="Custom">
+          </div>
+        </div>
+
+        <div>
+          <div class="input-people px-2">
+            <label for="people" class="text-neutral-200">
+              Number of People
+            </label>
+            <input type="number" class="input" placeholder="1" value="">
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4 bg-neutral-100 p-4 rounded-xl">
+          <div class="flex justify-between items-center">
+            <p class="text-neutral-50 text-sm">Tip Amount <br><span class="text-neutral-200">/ person</span></p>
+            <span class="text-primary text-2xl" id="amount">$4.27</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <p class="text-neutral-50 text-sm">Total <br><span class="text-neutral-200">/ person</span></p>
+            <span class="text-primary text-2xl">$32.79</span>
+          </div>
+          <button class="btn-reset">Reset</button>
+        </div>
+      </div>
+
+    </main>
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  </body>
+</html>
