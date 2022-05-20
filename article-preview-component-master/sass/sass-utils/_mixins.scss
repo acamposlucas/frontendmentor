@@ -1,0 +1,23 @@
+@mixin share-button {
+  aspect-ratio: 1;
+  background-image: url(../../images/icon-share.svg);
+  background-repeat: no-repeat;
+  background-position: 55% 45%;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 32px;
+  background-color: $blue-600;
+  span {
+    visibility: collapse;
+    font-size: 1px;
+  }
+}
+
+@mixin social-media-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+}

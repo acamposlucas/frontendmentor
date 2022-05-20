@@ -1,7 +1,9 @@
+@import "../sass-utils/mixins";
 .card {
   width: 330px;
   border-radius: 12px;
   overflow: hidden;
+  position: relative;
 
   .img-container {
     background-image: url(../../images/drawers.jpg);
@@ -65,30 +67,62 @@
       }
 
       button {
-        aspect-ratio: 1;
-        background-image: url(../../images/icon-share.svg);
-        background-repeat: no-repeat;
-        background-position: 55% 45%;
-        border: none;
-        border-radius: 100%;
-        height: 32px;
-        background-color: $blue-600;
-        span {
-          visibility: collapse;
-          font-size: 1px;
-        }
+        @include share-button;
       }
     }
   }
 
   .modal {
+    background-color: $blue-900;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
+    padding: 1.5rem 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
-    ul {
-      li {
-        font-size: 1px;
+    .modal-socials {
+      align-items: center;
+      display: flex;
+      gap: 1.5rem;
+
+      p {
+        color: $blue-800;
+        font-size: $sm;
+        letter-spacing: 5px;
+        text-transform: uppercase;
       }
+
+      ul {
+        display: flex;
+        gap: 1rem;
+
+        li {
+          a {
+            color: transparent;
+            cursor: pointer;
+            font-size: 1px;
+          }
+        }
+
+        li[data-social="facebook"] {
+          @include social-media-img;
+          background-image: url(../../images/icon-facebook.svg);
+        }
+        li[data-social="twitter"] {
+          @include social-media-img;
+          background-image: url(../../images/icon-twitter.svg);
+        }
+        li[data-social="pinterest"] {
+          @include social-media-img;
+          background-image: url(../../images/icon-pinterest.svg);
+        }
+      }
+    }
+    button {
+      @include share-button;
     }
   }
 }

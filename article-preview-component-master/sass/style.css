@@ -480,6 +480,11 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #ecf2f8;
   min-height: 100vh;
@@ -495,6 +500,7 @@ body {
   width: 330px;
   border-radius: 12px;
   overflow: hidden;
+  position: relative;
 }
 
 .card .img-container {
@@ -576,6 +582,7 @@ body {
   background-position: 55% 45%;
   border: none;
   border-radius: 100%;
+  cursor: pointer;
   height: 32px;
   background-color: #ecf2f8;
 }
@@ -586,13 +593,94 @@ body {
 }
 
 .card .modal {
+  background-color: #48556a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.card .modal .modal-socials {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card .modal .modal-socials p {
+  color: #6d7f97;
+  font-size: 13px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card .modal .modal-socials ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
 
-.card .modal ul li {
+.card .modal .modal-socials ul li a {
+  color: transparent;
+  cursor: pointer;
+  font-size: 1px;
+}
+
+.card .modal .modal-socials ul li[data-social="facebook"] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+  background-image: url(../../images/icon-facebook.svg);
+}
+
+.card .modal .modal-socials ul li[data-social="twitter"] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+  background-image: url(../../images/icon-twitter.svg);
+}
+
+.card .modal .modal-socials ul li[data-social="pinterest"] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+  background-image: url(../../images/icon-pinterest.svg);
+}
+
+.card .modal button {
+  aspect-ratio: 1;
+  background-image: url(../../images/icon-share.svg);
+  background-repeat: no-repeat;
+  background-position: 55% 45%;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 32px;
+  background-color: #ecf2f8;
+}
+
+.card .modal button span {
+  visibility: collapse;
   font-size: 1px;
 }
 /*# sourceMappingURL=style.css.map */
