@@ -6,6 +6,8 @@
   position: relative;
 
   @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 287px auto;
     width: 730px;
   }
 
@@ -16,6 +18,10 @@
     background-position: center 10%;
     height: 210px;
     width: 100%;
+
+    @media (min-width: 1024px) {
+      height: 100%;
+    }
   }
 
   .card-content {
@@ -29,6 +35,10 @@
       margin: 0;
       padding-bottom: 1rem;
       line-height: 1.4;
+
+      @media (min-width: 1024px) {
+        font-size: $md;
+      }
     }
 
     p {

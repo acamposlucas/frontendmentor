@@ -505,6 +505,10 @@ body {
 
 @media (min-width: 1024px) {
   .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 287px auto;
+        grid-template-columns: 287px auto;
     width: 730px;
   }
 }
@@ -516,6 +520,12 @@ body {
   background-position: center 10%;
   height: 210px;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .card .img-container {
+    height: 100%;
+  }
 }
 
 .card .card-content {
@@ -530,6 +540,12 @@ body {
   margin: 0;
   padding-bottom: 1rem;
   line-height: 1.4;
+}
+
+@media (min-width: 1024px) {
+  .card .card-content .card-main {
+    font-size: 20px;
+  }
 }
 
 .card .card-content p {
