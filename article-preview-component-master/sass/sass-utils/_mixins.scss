@@ -1,4 +1,4 @@
-@mixin share-button {
+@mixin share-button($bg-color) {
   aspect-ratio: 1;
   background-image: url(../../images/icon-share.svg);
   background-repeat: no-repeat;
@@ -7,7 +7,7 @@
   border-radius: 100%;
   cursor: pointer;
   height: 32px;
-  background-color: $blue-600;
+  background-color: $bg-color;
   span {
     visibility: collapse;
     font-size: 1px;
