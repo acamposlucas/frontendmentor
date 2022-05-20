@@ -5,6 +5,10 @@
   overflow: hidden;
   position: relative;
 
+  @media (min-width: 1024px) {
+    width: 730px;
+  }
+
   .img-container {
     background-image: url(../../images/drawers.jpg);
     background-size: cover;

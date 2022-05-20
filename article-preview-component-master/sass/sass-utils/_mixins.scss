@@ -1,8 +1,8 @@
 @mixin share-button($bg-color) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   aspect-ratio: 1;
-  background-image: url(../../images/icon-share.svg);
-  background-repeat: no-repeat;
-  background-position: 55% 45%;
   border: none;
   border-radius: 100%;
   cursor: pointer;
