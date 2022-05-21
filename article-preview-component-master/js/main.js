@@ -1,8 +1,6 @@
 const shareButton = document.getElementById("share");
 
-shareButton.addEventListener("click", () => {
-  const card = document.querySelector(".card");
-
+function createModal() {
   let modal = document.createElement("div");
   modal.classList.add("modal", "animate__animated", "animate__fadeIn");
   modal.innerHTML = `
@@ -28,5 +26,24 @@ shareButton.addEventListener("click", () => {
     <span>Share</span>
   </button>
   `;
+  return modal;
+}
+
+function removeElement(element) {
+  element.remove();
+}
+
+shareButton.addEventListener("click", (e) => {
+  const card = document.querySelector(".card");
+  const modal = createModal();
   card.appendChild(modal);
+});
+
+window.addEventListener("click", function (e) {
+  const modal = document.querySelector(".modal");
+  if (modal.contains(e.target) || shareButton.contains(e.target)) {
+    return;
+  } else {
+    removeElement(modal);
+  }
 });
