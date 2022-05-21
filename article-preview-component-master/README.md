@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-component-BgEULfZqhU)
+- Live Site URL: [Vercel](https://article-preview-component-gamma-three.vercel.app/)
 
 ## My process
 
@@ -54,6 +54,6 @@ I also need to study more about background positioning.
 
 ## Author
 
-- [Linkedin] - (https://www.linkedin.com/in/acamposlucas/)
+- [Linkedin](https://www.linkedin.com/in/acamposlucas/)
 - Frontend Mentor - [@acamposlucas](https://www.frontendmentor.io/profile/acamposlucas)
 - Twitter - [@acamposlucas](https://www.twitter.com/acamposlucas)
