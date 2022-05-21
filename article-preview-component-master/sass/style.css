@@ -499,7 +499,7 @@ body {
 .card {
   width: 330px;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
   position: relative;
 }
 
@@ -521,6 +521,8 @@ body {
   background-position: center 10%;
   height: 210px;
   width: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 @media (min-width: 1024px) {
@@ -532,6 +534,8 @@ body {
 .card .card-content {
   padding: 40px 40px 20px 40px;
   background-color: #fff;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .card .card-content .card-main {
@@ -641,11 +645,24 @@ body {
 
 @media (min-width: 1024px) {
   .card .modal {
-    bottom: 100px;
+    bottom: 90px;
     left: 550px;
     width: 250px;
     border-radius: 16px;
     padding: 20px 35px;
+  }
+  .card .modal:before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #48556a;
   }
 }
 
@@ -670,13 +687,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   gap: 1rem;
 }
 
 .card .modal .modal-socials ul li a {
   color: transparent;
-  cursor: pointer;
-  font-size: 1px;
+  width: inherit;
+  height: inherit;
+  display: inline-block;
 }
 
 .card .modal .modal-socials ul li[data-social="facebook"] {
