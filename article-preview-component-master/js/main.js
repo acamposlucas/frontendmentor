@@ -2,6 +2,7 @@ const shareButton = document.getElementById("share");
 
 shareButton.addEventListener("click", () => {
   const card = document.querySelector(".card");
+
   let modal = document.createElement("div");
   modal.classList.add("modal", "animate__animated", "animate__fadeIn");
   modal.innerHTML = `

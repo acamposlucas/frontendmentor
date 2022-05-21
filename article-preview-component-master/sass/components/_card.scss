@@ -9,6 +9,7 @@
     display: grid;
     grid-template-columns: 287px auto;
     width: 730px;
+    overflow: visible;
   }
 
   .img-container {
@@ -85,7 +86,6 @@
       }
     }
   }
-
   .modal {
     background-color: $blue-900;
     display: flex;
@@ -96,6 +96,14 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+
+    @media (min-width: 1024px) {
+      bottom: 100px;
+      left: 550px;
+      width: 250px;
+      border-radius: 16px;
+      padding: 20px 35px;
+    }
 
     .modal-socials {
       align-items: center;
@@ -137,6 +145,10 @@
     }
     button {
       @include share-button($blue-700);
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
     }
   }
 }

@@ -510,6 +510,7 @@ body {
     -ms-grid-columns: 287px auto;
         grid-template-columns: 287px auto;
     width: 730px;
+    overflow: visible;
   }
 }
 
@@ -638,6 +639,16 @@ body {
   width: 100%;
 }
 
+@media (min-width: 1024px) {
+  .card .modal {
+    bottom: 100px;
+    left: 550px;
+    width: 250px;
+    border-radius: 16px;
+    padding: 20px 35px;
+  }
+}
+
 .card .modal .modal-socials {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -677,6 +688,13 @@ body {
   background-image: url(../../images/icon-facebook.svg);
 }
 
+@media (min-width: 1024px) {
+  .card .modal .modal-socials ul li[data-social="facebook"] {
+    height: 20px;
+    width: 20px;
+  }
+}
+
 .card .modal .modal-socials ul li[data-social="twitter"] {
   background-size: cover;
   background-repeat: no-repeat;
@@ -686,6 +704,13 @@ body {
   background-image: url(../../images/icon-twitter.svg);
 }
 
+@media (min-width: 1024px) {
+  .card .modal .modal-socials ul li[data-social="twitter"] {
+    height: 20px;
+    width: 20px;
+  }
+}
+
 .card .modal .modal-socials ul li[data-social="pinterest"] {
   background-size: cover;
   background-repeat: no-repeat;
@@ -693,6 +718,13 @@ body {
   height: 24px;
   width: 24px;
   background-image: url(../../images/icon-pinterest.svg);
+}
+
+@media (min-width: 1024px) {
+  .card .modal .modal-socials ul li[data-social="pinterest"] {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .card .modal button {
@@ -716,5 +748,11 @@ body {
 .card .modal button span {
   visibility: collapse;
   font-size: 1px;
+}
+
+@media (min-width: 1024px) {
+  .card .modal button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
