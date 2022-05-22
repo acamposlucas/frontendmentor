@@ -33,7 +33,7 @@ function removeElement(element) {
   element.remove();
 }
 
-shareButton.addEventListener("click", (e) => {
+shareButton.addEventListener("click", () => {
   const card = document.querySelector(".card");
   const modal = createModal();
   card.appendChild(modal);
@@ -41,9 +41,11 @@ shareButton.addEventListener("click", (e) => {
 
 window.addEventListener("click", function (e) {
   const modal = document.querySelector(".modal");
-  if (modal.contains(e.target) || shareButton.contains(e.target)) {
-    return;
-  } else {
-    removeElement(modal);
+  if (modal) {
+    if (modal.contains(e.target) || shareButton.contains(e.target)) {
+      return;
+    } else {
+      removeElement(modal);
+    }
   }
 });
