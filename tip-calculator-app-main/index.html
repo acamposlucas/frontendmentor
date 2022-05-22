@@ -46,12 +46,17 @@
             <label for="input-tip">Select Tip %</label><span>Error</span>
           </div>
           <div class="tip-grid">
-            <button value="5">5%</button>
-            <button value="10">10%</button>
-            <button value="15">15%</button>
-            <button value="25">25%</button>
-            <button value="50">50%</button>
-            <input type="text" name="inp-tip" placeholder="Custom" />
+            <button value="5" class="btn-tip">5%</button>
+            <button value="10" class="btn-tip">10%</button>
+            <button value="15" class="btn-tip">15%</button>
+            <button value="25" class="btn-tip">25%</button>
+            <button value="50" class="btn-tip">50%</button>
+            <input
+              type="text"
+              name="input-tip"
+              id="input-custom"
+              placeholder="Custom"
+            />
           </div>
         </div>
 
@@ -60,18 +65,18 @@
             <label for="no-of-people">Number of people</label>
           </div>
           <div class="input-container">
-            <input type="text" />
+            <input type="text" id="input-people" />
           </div>
         </div>
 
         <div class="calc-result">
           <div class="calc-output">
             <p>Tip amount <br /><span>/ person</span></p>
-            <span class="value">$4.27</span>
+            <span class="value" id="tipAmountValue"></span>
           </div>
           <div class="calc-output">
             <p>Total <br /><span>/ person</span></p>
-            <span class="value">$32.79</span>
+            <span class="value" id="totalPersonValue"></span>
           </div>
           <div class="button-wrapper">
             <button id="reset">Reset</button>
@@ -87,5 +92,7 @@
       >. Coded by
       <a href="https://github.com/acamposlucas" target="_blank">Lucas</a>.
     </footer>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
