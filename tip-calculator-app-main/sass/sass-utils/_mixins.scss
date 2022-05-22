@@ -1,0 +1,34 @@
+@mixin input-container {
+  background-color: $veryLightGrayishCyan;
+  border-radius: 8px;
+  padding: 10px 16px;
+}
+
+@mixin input($bg-url) {
+  border: none;
+  background-color: inherit;
+  color: $darkCyan;
+  text-align: right;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: inherit;
+  background-image: $bg-url;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 100%;
+}
+
+@mixin label-wrapper {
+  align-items: center;
+  color: $darkGrayishCyan;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  span {
+    color: lightcoral;
+    visibility: hidden;
+  }
+}

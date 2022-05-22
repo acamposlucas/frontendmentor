@@ -1,0 +1,19 @@
+@import "../sass-utils/variables";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $lightGrayishCyan;
+  display: grid;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  place-items: center;
+}
+
+input {
+  font-size: 24px;
+}
