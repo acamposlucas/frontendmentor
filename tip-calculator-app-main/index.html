@@ -27,45 +27,53 @@
         <img src="./images/logo.svg" alt="splitter" />
       </header>
       <div class="calculator">
-        <div class="bill-container">
-          <div class="label-wrapper">
-            <label for="input-bill">Bill</label>
-            <span>Error</span>
+        <div class="calculator-wrapper">
+          <div class="bill-container">
+            <div class="label-wrapper">
+              <label for="input-bill">Bill</label>
+              <span>Error</span>
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                id="input-bill"
+                name="input-bill"
+                class="input bill"
+              />
+            </div>
           </div>
-          <div class="input-container">
-            <input
-              type="text"
-              id="input-bill"
-              name="input-bill"
-              class="input bill"
-            />
+          <div class="tip-container">
+            <div class="label-wrapper">
+              <label for="input-tip">Select Tip %</label><span>Error</span>
+            </div>
+            <div class="tip-grid">
+              <button data-active="false" value="5" class="btn-tip">5%</button>
+              <button data-active="false" value="10" class="btn-tip">
+                10%
+              </button>
+              <button data-active="true" value="15" class="btn-tip">15%</button>
+              <button data-active="false" value="25" class="btn-tip">
+                25%
+              </button>
+              <button data-active="false" value="50" class="btn-tip">
+                50%
+              </button>
+              <input
+                type="text"
+                name="input-tip"
+                id="input-custom"
+                placeholder="Custom"
+              />
+            </div>
           </div>
-        </div>
-        <div class="tip-container">
-          <div class="label-wrapper">
-            <label for="input-tip">Select Tip %</label><span>Error</span>
-          </div>
-          <div class="tip-grid">
-            <button value="5" class="btn-tip">5%</button>
-            <button value="10" class="btn-tip">10%</button>
-            <button value="15" class="btn-tip">15%</button>
-            <button value="25" class="btn-tip">25%</button>
-            <button value="50" class="btn-tip">50%</button>
-            <input
-              type="text"
-              name="input-tip"
-              id="input-custom"
-              placeholder="Custom"
-            />
-          </div>
-        </div>
 
-        <div class="people-container">
-          <div class="label-wrapper">
-            <label for="no-of-people">Number of people</label>
-          </div>
-          <div class="input-container">
-            <input type="text" id="input-people" />
+          <div class="people-container">
+            <div class="label-wrapper">
+              <label for="no-of-people">Number of people</label>
+            </div>
+            <div class="input-container">
+              <input type="text" id="input-people" />
+            </div>
           </div>
         </div>
 

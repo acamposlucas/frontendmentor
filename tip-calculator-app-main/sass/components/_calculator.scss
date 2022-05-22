@@ -6,11 +6,29 @@
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
   padding: 36px 0px;
-  width: 100vw;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 920px;
+  }
+
+  .calculator-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    @media (min-width: 1024px) {
+      margin-left: 50px;
+    }
+  }
 
   .bill-container {
-    margin-bottom: 40px;
-    padding-inline: 30px;
     .label-wrapper {
       @include label-wrapper;
     }
@@ -24,8 +42,6 @@
   }
 
   .tip-container {
-    margin-bottom: 40px;
-    padding-inline: 30px;
     .label-wrapper {
       @include label-wrapper;
     }
@@ -34,6 +50,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
 
       button,
       input {
@@ -48,6 +68,11 @@
         font-size: 24px;
         border: none;
         border-radius: 8px;
+
+        &[data-active="true"] {
+          background-color: $cyan;
+          color: $darkCyan;
+        }
       }
 
       input {
@@ -69,7 +94,6 @@
   }
 
   .people-container {
-    padding-inline: 30px;
     .label-wrapper {
       @include label-wrapper;
     }
@@ -91,6 +115,11 @@
     padding-top: 45px;
     padding-bottom: 24px;
     background-color: $darkCyan;
+
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+    }
 
     .calc-output {
       align-items: center;
@@ -115,6 +144,8 @@
     }
 
     .button-wrapper {
+      grid-row: 4;
+      align-self: center;
       button {
         background-color: $cyan;
         border: none;

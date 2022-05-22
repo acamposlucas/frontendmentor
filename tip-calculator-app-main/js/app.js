@@ -1,4 +1,4 @@
-const totalBill = document.getElementById("input-bill");
+const bill = document.getElementById("input-bill");
 const tipButtons = document.querySelectorAll(".btn-tip");
 const customTip = document.getElementById("input-custom");
 const inputPeople = document.getElementById("input-people");
@@ -9,50 +9,41 @@ const reset = document.getElementById("reset");
 let billAmount = 0.0;
 let tipValue = 0.15;
 let numberOfPeople = 1;
-let totalTip = 0;
 
-function calculateTipPerPerson() {
-  let tipAmountPerPerson = (billAmount * tipValue) / numberOfPeople;
-  return tipAmountPerPerson.toFixed(2);
+function getNumberOfPeople() {
+  if (inputPeople.value === "") {
+    numberOfPeople = 1;
+  } else {
+    numberOfPeople = inputPeople.value;
+  }
+  return numberOfPeople;
 }
 
-function calculateTotalPerPerson() {
-  let tipAmount = billAmount * tipValue;
-  let totalBillPerPerson = (billAmount + tipAmount) / numberOfPeople;
-  return totalBillPerPerson;
-}
-
-function getOutput() {
-  tipAmountValue.innerHTML = `$${calculateTipPerPerson()}`;
-  totalPersonValue.innerHTML = `$${calculateTotalPerPerson()}`;
-}
-
-totalBill.addEventListener("change", () => {
-  billAmount = parseInt(totalBill.value);
-  getOutput();
-});
-
-customTip.addEventListener("change", () => {
-  tipValue = customTip.value;
-});
-
-tipButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    tipValue = button.value;
+tipButtons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    if (e.target === btn) {
+      btn.setAttribute("data-active", true);
+      tipValue = Number(btn.value / 100);
+      calculateBill();
+    }
   });
 });
 
-inputPeople.addEventListener("change", () => {
-  numberOfPeople = inputPeople.value;
-  if (inputPeople.value === 0) {
-    numberOfPeople = 1;
-  }
-  getOutput();
+customTip.addEventListener("change", () => {
+  tipValue = Number(customTip.value / 100);
+  calculateBill();
 });
 
-reset.addEventListener("click", () => {
-  totalBill.value = "";
-  inputPeople.value = "";
-  tipAmountValue.innerHTML = "";
-  totalPersonValue.innerHTML = "";
-});
+function calculateBill() {
+  billAmount = Number(bill.value);
+  numberOfPeople = getNumberOfPeople();
+  tipAmountValue.innerHTML = `$${(
+    (billAmount * tipValue) /
+    numberOfPeople
+  ).toFixed(2)}`;
+  totalPersonValue.innerHTML = `$${(
+    (billAmount * tipValue + billAmount) /
+    numberOfPeople
+  ).toFixed(2)}`;
+  console.log(billAmount);
+}
